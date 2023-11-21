@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Aida Ondoño Claret">
+    <title>Float 1</title>
+
+    <style>
+        p{
+            font-size: 32px;
+        }
+
+        h1{
+            background-color: lime;
+            clear: both; /*both vol dir els dos, dreta i esquerre*/
+        }
+
+        img{
+            width: 100px;
+        }
+
+        div{
+            width: 960px;
+            margin: auto;
+        }
+
+        .esquerra{
+            float: left;
+            margin-right: 5px;
+        }
+
+        .dreta{
+            float: right;
+            margin-left: 5px;
+        }
+
+        .pesq{
+            float: left;
+            width: 50%;
+        }
+
+        .pdre{
+            float: right;
+            width: 50%;
+        }
+
+        .capitular{
+            float: left;
+            width: 118px;
+        }
+
+        span{
+            visibility: hidden;
+            width: 0px;
+            display: none; 
+        }/*Eliminar lo que hi ha en el span*/
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Float left</h1>
+
+        <img src="img/images.jpg" alt="" class="esquerra">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi expedita rem nostrum accusantium repudiandae illo nisi fugit eveniet est iusto vero et cum, quibusdam ea minima magnam fugiat qui optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit at dolores tenetur ad perspiciatis voluptate eveniet recusandae tempore nostrum officia alias debitis necessitatibus, unde aut provident, quos ratione sapiente cum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum culpa, obcaecati quisquam dignissimos veritatis, unde sequi nulla dolor rerum asperiores architecto consectetur? Mollitia exercitationem deleniti labore inventore ea ducimus atque.</p>
+        
+        <h1>Float right</h1>
+
+        <img src="img/img1.jpg" alt="" class="dreta">
+        
+        <p>Id explicabo sapiente maxime facilis aspernatur quos excepturi ab doloremque voluptate quam error doloribus, delectus voluptatibus ullam qui aperiam. Harum consectetur sapiente blanditiis qui iure eos fuga rem cupiditate minima.</p>
+        
+        <h1>Doble float</h1>
+        
+        <p class="pesq">Placeat modi praesentium recusandae vel? Reprehenderit nulla laudantium necessitatibus illum sed beatae aperiam unde tempora! Amet, nemo iusto perspiciatis minima maxime dolor nulla quibusdam corrupti optio molestiae natus quo esse.</p>
+        
+        <p class="pdre">Laboriosam, aspernatur temporibus. Cumque ad dicta deleniti quaerat totam, commodi consequuntur autem modi laudantium sed tenetur laboriosam animi, obcaecati aut excepturi accusantium error numquam ea sunt? Ratione architecto non quasi.</p>
+        
+        <h1>Capitular</h1>
+
+        <img src="img/cap_L.png" alt="" class="capitular">
+
+        <p><span>L</span>orem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat unde numquam libero dolorem, sunt sed aliquid possimus fuga officia, cum beatae ratione iste qui corrupti rem dolores quaerat expedita et. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis eius suscipit voluptate impedit aperiam doloribus perspiciatis molestiae commodi ea, fugiat deserunt illo necessitatibus sed odio libero voluptatum. Officiis, at sit?</p>
+
+    </div>
+<!--p*4>lorem i intro, et fa 4 parrafs amb cada un un lorem
+    (h1+p>lorem)*4 i intro, fara h1 i un p amb lorem a dins, 4 cops
+-->
+
+</body>
+
+</html>

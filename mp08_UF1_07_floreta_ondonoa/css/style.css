@@ -1,0 +1,88 @@
+.petals{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 0 100%;
+    position: relative;
+    left: 100px;
+    top: 100px;
+    transform-origin: right bottom; /*des d'on gira*/
+    
+}
+
+#primer{
+    top: 100px;
+}
+
+#segon{
+    transform: rotate(60deg); /* deg = graus*/
+    top: 0px;
+}
+
+#tercer{
+    transform: rotate(120deg); 
+    top: -100px;
+}
+
+#quart{
+    transform: rotate(180deg); 
+    top: -200px;
+}
+
+#cinque{
+    transform: rotate(240deg); 
+    top: -300px;
+}
+
+#sise{
+    transform: rotate(300deg); 
+    top: -400px;
+}
+
+.cor{
+    height: 60px;
+    width: 60px;
+    background-color: orange;
+    border-radius: 50%;
+    position: relative;
+    top: -430px;
+    left: 170px;
+}
+
+.flor{
+    /*background-color: yellow;*/
+    width: 400px;
+    height: 400px;
+    /*transform: rotate(45deg); Rotar tota la flor 45 graus*/
+    /*transform-origin: (200px, 200px); punt central*/
+    /*transform-origin: right bottom;*/
+    /*transform-origin: 400px, 400px; punt central*/
+   /* transform: rotate(35deg);*/
+   float: left;
+}
+
+.flor:first-child{
+    animation-name: rotacio;
+    animation-duration: 1s;
+    animation-iteration-count: infinite; /* quants cops ho fa */
+    animation-timing-function: linear; /* moviment es manté constant */
+    animation-direction: reverse; /* canviar la rotació */
+}
+
+.flor:hover {
+    animation-name: rotacio;
+    animation-duration: 1s;
+    animation-iteration-count: infinite; /* quants cops ho fa */
+    animation-timing-function: linear; /* moviment es manté constant */
+    animation-direction: reverse; /* canviar la rotació */
+}
+
+@keyframes rotacio{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}

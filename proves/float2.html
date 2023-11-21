@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Aida Ondoño Claret">
+        <title>Float 2</title>
+
+        <style>
+
+            body{
+                margin: 0;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            h1{
+                margin: 0;
+                text-align: center;
+                color: white;
+                padding: 1%;
+            }
+
+            div{
+                margin: 0;
+                padding: 0.5%;
+            }
+
+            .cap{
+                background-color: blue;
+            }
+
+            .menu{
+                width: 24%;
+                float: left;
+                background-color: aquamarine;
+            }
+
+            .contingut{
+                float: left;
+                width: 49%;
+                background-color: gainsboro;
+                overflow: scroll;
+                height: 840px;
+            }
+
+            .lateral{
+                width: 24%;
+                float: right;
+                background-color: aquamarine;
+            }
+
+            .peu{
+                clear: left;
+                text-align: center;
+                background-color: blue;
+                color: white;
+                margin-bottom: 0;
+            }
+
+            a{
+                text-decoration: none;
+                color: black;
+            }
+
+            a:hover{
+                color: red;
+            }
+
+            *, x:after, x:before{
+                margin: 0;
+                padding: 0;
+            }
+
+            .navegacio{
+                /*background: yellow;*/ 
+                width: 42%;
+                margin: auto;
+            }
+
+            .primernivell{
+                background: aquamarine;
+                color: black;
+                margin: 0.5rem;
+                display: inline-block;
+                padding: 0.25rem;
+                height: 2rem;
+                position: relative;
+            }
+
+            .primernivell:hover{
+                background: blue;            
+                color: white;
+            }
+
+            .primernivell:hover .secundari{ /*quan passis pel primer nevell, desplega el secundari*/
+                display: block; 
+            }
+
+            .secundari{
+                /*background: green;*/
+                background-color: aquamarine;
+                color: black;
+                position: absolute;
+                left: 0;
+                display: none;
+                top: 2.5rem;
+            }
+
+            .segonnivell{
+                /*background: brown;*/
+                display: block;
+                /*text-indent: 1rem; sangria*/
+                margin: 0;
+                height: 2rem;
+                font-size: 0.85rem;
+                top: 2rem;
+                border-bottom: solid white 1px;
+            }
+
+            .segonnivell:hover{
+                background: blue;
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="cap">
+            <h1>Frankbook</h1>
+        
+            <ul class="navegacio">
+                <li class="primernivell">Opció 1
+                    <ul class="secundari">
+                        <li class="segonnivell">Sub-opció</li>
+                        <li class="segonnivell">Sub-opció</li>
+                        <li class="segonnivell">Sub-opció</li>
+                        <li class="segonnivell">Sub-opció</li>
+                        <li class="segonnivell">Sub-opció</li>
+                    </ul>
+                </li>
+                <li class="primernivell">Opció 2
+                    <ul class="secundari">
+                        <li class="segonnivell">Sub-opció</li>
+                        <li class="segonnivell">Sub-opció</li>
+                        <li class="segonnivell">Sub-opció</li>
+                        <li class="segonnivell">Sub-opció</li>
+                        <li class="segonnivell">Sub-opció</li>
+                    </ul>
+                </li>
+                <li class="primernivell">Opció 3
+                    <ul class="secundari">
+                        <li class="segonnivell">Sub-opció</li>
+                        <li class="segonnivell">Sub-opció</li>
+                        <li class="segonnivell">Sub-opció</li>
+                        <li class="segonnivell">Sub-opció</li>
+                        <li class="segonnivell">Sub-opció</li>
+                    </ul>
+                </li>
+                <li class="primernivell">Opció 4
+                    <ul class="secundari">
+                        <li class="segonnivell">Sub-opció</li>
+                        <li class="segonnivell">Sub-opció</li>
+                        <li class="segonnivell">Sub-opció</li>
+                        <li class="segonnivell">Sub-opció</li>
+                        <li class="segonnivell">Sub-opció</li>
+                    </ul>
+                </li>
+                <li class="primernivell">Opció 5
+                    <ul class="secundari">
+                        <li class="segonnivell">Sub-opció</li>
+                        <li class="segonnivell">Sub-opció</li>
+                        <li class="segonnivell">Sub-opció</li>
+                        <li class="segonnivell">Sub-opció</li>
+                        <li class="segonnivell">Sub-opció</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="menu">
+            <h2>Home</h2>
+
+            <ul>
+                <li><a href="#p1" class="href">Post 1</a></li>
+                <li><a href="p2" class="href">Post 2</a></li>
+                <li><a href="#p3" class="href">Post 3</a></li>
+                <li><a href="#p4" class="href">Post 4</a></li>
+                <li><a href="#p5" class="href">Post 5</a></li>
+                <li><a href="#p6" class="href">Post 6</a></li>
+                <li><a href="#p7" class="href">Post 7</a></li>
+                <li><a href="#p8" class="href">Post 8</a></li>
+                <li><a href="#p9" class="href">Post 9</a></li>
+                <li><a href="#p10" class="href">Post 10</a></li>
+            </ul>
+        </div>
+
+        <div class="contingut">
+            <h2>Timeline</h2>
+
+            <br>
+
+            <h3 id="p1">Post1</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio corrupti accusantium eum error repellendus ut maiores molestias nihil sequi, repudiandae facere esse pariatur dolores rem itaque animi totam voluptas et! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, in! Sunt ducimus consequuntur quisquam eos pariatur facere illo repellat necessitatibus illum? Nesciunt sit dolores pariatur id nemo quos repudiandae adipisci?</p>
+            <h3 id="p2">Post2</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, accusantium nihil dolorem nostrum debitis repellat repellendus distinctio nisi, sunt soluta reiciendis nesciunt hic! Harum dolor, aperiam quo reiciendis excepturi aspernatur.Neque nihil saepe officia officiis corporis accusantium fuga voluptatibus quae ipsam tempora mollitia amet laboriosam perspiciatis ducimus temporibus, ipsa adipisci fugit illum necessitatibus sit culpa eum porro! Officia, mollitia fugiat!</p>
+            <h3 id="p3">Post3</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus voluptatem nulla sit dolor laborum officiis nostrum maiores et sunt ut reprehenderit molestias provident consectetur, aliquam dolorem quisquam sequi molestiae tenetur?Expedita ad aperiam velit eum doloribus, consequuntur pariatur beatae odio minima, at ea repellendus tenetur distinctio, tempore iusto quas libero? Cum laboriosam voluptas velit doloremque, quod provident facere tenetur deleniti.</p>
+            <h3 id="p4">Post4</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia deleniti placeat id consectetur ipsum repellat, qui veniam tempora voluptatem. Architecto enim aut dolor provident beatae illo soluta quis blanditiis quaerat?Accusantium molestiae asperiores at odit iusto commodi totam! Ullam nostrum dolores libero doloremque vero aspernatur voluptate veniam, ea in quibusdam eum blanditiis error similique quas voluptas quisquam porro dolore distinctio!</p>
+            <h3 id="p5">Post5</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores hic alias nobis porro officia quod placeat excepturi voluptates et? Perspiciatis officia neque iste facere architecto possimus optio molestiae dolore similique?Quasi rem voluptatibus dolorum alias quia laborum, earum delectus sed est reprehenderit ea quae unde molestiae distinctio deserunt harum perspiciatis laboriosam temporibus at veritatis pariatur corporis. Distinctio, suscipit molestias. Fugit?</p>
+            <h3 id="p6">Post6</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor suscipit, commodi voluptates harum ipsam dolorem? Hic nostrum sunt odit nisi consequuntur animi inventore ad quos, culpa fugit! Suscipit, illo vitae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum similique sapiente nulla provident commodi ad delectus eaque, totam, veniam quibusdam et facere qui adipisci culpa assumenda cumque necessitatibus maiores optio!</p>
+            <h3 id="p7">Post7</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas corporis ipsa aliquid id qui unde, ad velit laboriosam neque quos labore blanditiis tempore quaerat. Aut, consectetur quos. Accusamus, placeat molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, vitae. Ut explicabo delectus nulla dicta officiis sapiente aperiam nostrum officia. Maiores quae animi quidem consectetur tempore velit blanditiis! Nemo, corporis.</p>
+            <h3 id="p8">Post8</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum accusantium autem voluptatem possimus ipsum veritatis nisi distinctio. Quaerat aperiam inventore neque dolores debitis, facilis, porro eum odio, enim laborum quos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore veniam perferendis qui sapiente adipisci! Dolore voluptatibus temporibus consequuntur! Quos velit saepe ea dolore est, numquam vel ducimus voluptate veniam nulla.</p>
+            <h3 id="p9">Post9</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus similique soluta quisquam at nobis hic aliquam quam suscipit quasi veritatis eveniet, architecto, sit autem sequi. Cumque quibusdam voluptate beatae nobis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores iste tenetur illo aliquid suscipit rerum dignissimos maiores! Explicabo blanditiis modi est! Repudiandae, delectus quisquam. Recusandae, earum. Nulla ipsam asperiores cumque.</p>
+            <h3 id="p10">Post10</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus at aut dignissimos ex amet, dolores incidunt reprehenderit, eveniet, excepturi rem doloremque deserunt. Placeat omnis, distinctio cum tempore facilis provident minima? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti reprehenderit a odio quis suscipit, veniam asperiores, animi aliquid sequi debitis, vel eum. Nesciunt amet eveniet sed, ipsa deserunt rem tenetur?</p>
+            
+
+        </div>
+
+        <div class="lateral">
+            <h2>Contacts</h2>
+
+            <ul>
+                <li>Contact</li>
+                <li>Contact</li>
+                <li>Contact</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+
+        <div class="peu">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+    </body>
+</html>

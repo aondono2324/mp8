@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixes</title>
+    <style>
+        div{
+            width: 500px;
+            height: 300px;
+
+            background-color: #ff0000;
+
+            border: solid 5px maroon;
+            border-top: dashed 10px yellow; /*ratlletes*/
+            border-bottom: dotted 10px pink; /*punts*/
+
+            padding: 10px;
+            padding-left: 30px;
+            /*si tots els paddings son iguals -> padding: 10px;*/
+            /*si els paddings de dalt i abaix són iguals, i dreta i esquerre son iguals es pot escriure -> padding: 100px 50px;*/
+            /*si tots els paddings son diferents es posa per ordre, començant per dalt com les agulles del rellotge -> padding: 50px 20px 30px 10px;*/
+
+            margin: 0;
+            margin-top: 50px;
+            margin-right: auto; /*per centrar*/
+            margin-bottom: 50px;
+            margin-left: auto; /*per centrar*/
+            /*si tots els margins son iguals -> margin: 10px;*/
+            /*si els margins de dalt i abaix són iguals, i dreta i esquerre son iguals es pot escriure -> margin: 100px 50px;*/
+            /*si tots els margins son diferents es posa per ordre, començant per dalt com les agulles del rellotge -> margin: 50px 20px 30px 10px;*/
+
+            overflow: hidden; /*amaga informació que no hi cap dins del div*/
+        }
+
+        p{
+            font-size: 20px;
+            color: white;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Model de caixes / Box model</h2>
+
+    <img src="box_model.png" alt="Gràfic de box model" style="width: 500px;">
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis repellat eaque ipsum animi consequatur itaque ea nobis pariatur quisquam, doloremque officia unde incidunt fugit laboriosam nulla placeat deleniti nam fuga?
+        Molestias corrupti, inventore maiores doloribus itaque nisi vero magnam nulla! Atque vero commodi officiis voluptate, nostrum quas reprehenderit doloribus excepturi blanditiis, laboriosam at, voluptates ex quaerat adipisci. Soluta, non architecto?
+        Ab quae hic totam obcaecati laudantium velit dicta cum sint accusantium nostrum molestiae, maiores explicabo cumque, repudiandae et perferendis quidem provident, in nemo distinctio. Velit dolor temporibus qui neque dicta.
+        Aspernatur labore commodi reiciendis quasi impedit deleniti, veniam nostrum accusantium ullam recusandae ad pariatur magnam sed perferendis autem quam. Dignissimos maxime optio amet dolorum non nemo fuga, tenetur voluptatum voluptates.</p>
+    </div>
+    
+</body>
+</html>

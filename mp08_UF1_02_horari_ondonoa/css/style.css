@@ -1,0 +1,39 @@
+table{
+    text-align: center;
+    width: 50%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, th, td{
+    border: 1px solid;
+}
+
+.dia{
+    background-color: #D2C9BA;
+}
+
+.hora{
+    background-color: #E8E8DF;
+}
+
+.M09{
+    background-color: #9DF8A4;
+}
+
+.M08{
+    background-color: #DE9DF8;
+}
+
+.M07{
+    background-color: #F8A49D;
+}
+
+.tutoria{
+    background-color: #9DBBF8;
+}
+
+.pati{
+    background-color: #F5F89D;
+}
