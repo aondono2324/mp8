@@ -116,7 +116,7 @@ h5{
 .web, .grafic, .altres{
     border: solid 0.05rem black;
     width: 10%;
-    margin: 4% 0 0 17%;
+    margin: 4% 11.6% 0 11.6%;
     text-align: center;
     float: left;
     background-color: white;
@@ -169,7 +169,7 @@ h2{
 .projectes-web .treball{   
     border: solid 0.05rem black;
     width: 10%;
-    margin: 2% 0 0 8%;
+    margin: 2% 4.95% 0 4.95%;
     text-align: center;
     float: left;
     background-color: white;
@@ -184,16 +184,20 @@ h2{
 .apartat4 .titol{
     text-align: center;
     padding: 6rem 0 0 0;
-
 }
 
 .projectes-grafic .treball{
     border: solid 0.05rem black;
     width: 10%;
-    margin: 2% 0 0 10%;
+    margin: 2% 7.4% 0 7.4%;
     text-align: center;
     float: left;
     background-color: white;
+
+}
+
+.projectes-grafic{
+    
 }
 
 
@@ -212,7 +216,7 @@ h2{
 .altres-projectes .treball{
     border: solid 0.05rem black;
     width: 10%;
-    margin: 2% 0 0 10%;
+    margin: 2% 7.4% 0 7.4%;
     text-align: center;
     float: left;
     background-color: white;
@@ -229,7 +233,7 @@ h2{
     padding-top: 1rem;
     border: solid 0.05rem black;
     width: 10%;
-    margin: 2% 0 0 8%;
+    margin: 2% 4.95% 0 4.95%;
     text-align: center;
     float: left;
     background-color: white;
@@ -278,21 +282,158 @@ p{
     padding: 0 4rem;
 }
 
-/*APARTAT 4*/
+/*APARTAT 4 i 5*/
 .apar4{
-    height: 60rem;
+    height: 40rem;
 }
 
-.apar4 .experiencia{
-    padding: 6rem 4rem 0 0;
+.apar4 .experiencia, .apar5 .titulacio{
+    padding: 4rem 4rem 0 0;
     float: left;
     width: 100%;
 }
 
-.experiencia h3{
+.experiencia h3, .apar5 h3{
     font-size: 2.5rem;
     margin-bottom: 1rem;
     text-align: center;
     margin: 0;
 }
 
+.averlance, .freelance, .empiezapori, .batxillerat, .provencana, .alguero{
+    width: 27.4%;
+    margin-top: 4rem;
+    padding: 2rem 4rem 0 4rem;
+    float: left;
+}
+
+.averlance, .freelance{
+    border-right: 0.01rem solid black;
+    height: 20rem;
+}
+
+.averlance h4, .freelance h4, .empiezapori h4, .batxillerat h4, .provencana h4, .alguero h4{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #0A3B3C;
+    text-align: center;
+}
+
+.averlance h6, .freelance h6, .empiezapori h6, .batxillerat h6, .provencana h6, .alguero h6{
+    font-size: 0.8rem;
+    font-weight: 200;
+    color: grey;
+    text-align: center;
+}
+
+.averlance ul li, .freelance ul li, .empiezapori ul li{
+    padding: 0;
+    margin: 0;
+    float: none;
+    font-size: 0.85rem;
+    font-weight: 200;
+}
+
+.averlance ul, .freelance ul, .empiezapori ul{
+    list-style-type:circle;
+    overflow:visible;
+    padding-left: 1rem;
+}
+
+
+.averlance hr, .freelance hr, .empiezapori hr, .batxillerat hr, .provencana hr, .alguero hr{
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.apar5{
+    height: 30rem;
+    background-color: #deeee5;
+}
+
+.batxillerat, .provencana{
+    border-right: 0.01rem solid black;
+    height: 10rem;
+}
+
+.batxillerat p, .provencana p, .alguero p{
+    text-align: center;
+}
+
+/*APARTAT 6 i 7*/
+.apar6, .apar7{
+    height: 30rem;
+}
+
+.apar6 .cursos, .apar7 .dades{
+    padding: 4rem 4rem 0 0;
+    float: left;
+    width: 100%;
+}
+
+.cursos h3, .apar7 .dades{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin: 0;
+}
+
+.curs, .curs-ultim{
+    width: 14%;
+    margin-top: 4rem;
+    padding: 2rem 4rem 0 4rem;
+    float: left;
+}
+
+.dada, .dada-ultim{
+    width: 18%;
+    margin-top: 4rem;
+    padding: 2rem 4rem 0 4rem;
+    float: left;
+}
+
+.curs, .dada{
+    border-right: 0.01rem solid black;
+    height: 10rem;
+}
+
+.curs h4, .curs-ultim h4, .dada h4, .dada-ultim h4{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #0A3B3C;
+    text-align: center;
+}
+
+.curs h6, .curs-ultim h6, .dada h6, .dada-ultim h6{
+    font-size: 0.8rem;
+    font-weight: 200;
+    color: grey;
+    text-align: center;
+}
+
+.curs p, .curs-ultim p, .dada p, .dada-ultim p{
+    text-align: center;
+}
+
+.curs hr, .curs-ultim hr, .dada hr, .dada-ultim hr{
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.dada ul li, .dada-ultim ul li{
+    padding: 0;
+    margin: 0;
+    float: none;
+    font-size: 0.85rem;
+    font-weight: 200;
+    text-align: left;
+}
+
+.dada ul, .dada-ultim ul{
+    list-style-type:circle;
+    overflow:visible;
+    padding-left: 1rem;
+}
