@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap');
+
+*,
+x:after,
+x:before {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*---- MENU ----*/
+.menu{
+    width: 100%;
+    height: 5rem;
+    background-color: #0A3B3C;
+    font-weight: 300;
+    position: fixed;
+}
+
+.nav{
+    margin: 0 0 0 2rem;
+}
+
+.nav, ul{
+    list-style-type: none;
+    overflow: hidden;
+    top: 1.7rem;
+    float: left;
+}
+
+
+li{
+    float: left;
+    padding: 2rem 0;
+}
+
+li a{
+    display: block;
+    text-decoration: none;
+}
+
+.nav ul li {
+    position: relative;
+    margin: 0 3rem 0 0;
+}
+
+.projectes:hover .nav2{ 
+    display: block; 
+}
+
+.nav2 { 
+    /*position: absolute;*/
+    width: 4.5rem;
+    display: none;
+    margin: 0;
+    background-color: #0A3B3C;
+    padding: 1rem 2rem;
+    margin-left: -2rem;
+    font-weight: 200;
+}
+
+.practica {
+    margin: 0!important;
+    display: block;
+    padding: 0.2rem 0;
+}
+
+a{
+    color: #deeee5;
+}
+
+.logo img{
+    width: 8rem;
+    margin: 0.3rem 0rem 0 1.5rem ;
+    float: left;
+    display: block;
+}
+
+
+/* ---- PROJECTES ---- */
+/*APARTAT 1*/
+.apartat1, .apar1{
+    padding: 5rem 0 0 0;
+    height: 30rem;
+    background-color: #deeee5;
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: 400;
+    padding: 2rem 0 0 2rem;
+    line-height: 4rem;
+    color: #0A3B3C;
+}
+
+
+.apartat1 .titol, .apar1 .titol{
+    padding: 4rem 0 0 3rem;
+    width: 25%;
+}
+
+h5{
+    font-weight: 300;
+    padding: 1rem 0 0 2rem;
+    font-size: 1.2rem;
+    color: #0A3B3C;
+}
+
+
+/*APARTAT2*/
+.apartat2{
+    height: 35rem;
+}
+
+.web, .grafic, .altres{
+    border: solid 0.05rem black;
+    width: 10%;
+    margin: 4% 0 0 17%;
+    text-align: center;
+    float: left;
+    background-color: white;
+}
+
+h3{
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+/*button*/
+.baix{
+    margin-top: 1rem;
+    width: 3rem;
+    height: 2rem;
+    background-color: #0A3B3C;
+    color: #deeee5;
+    border: none;
+    padding: 0 1rem 0 1rem;
+    margin-bottom: 2rem;
+}
+
+.baix:hover{
+    background-color: #deeee5;
+    color: #0A3B3C;
+    border: 0.1rem solid #0A3B3C;
+}
+
+.imatge-a2{
+    width: 100%;
+}
+
+/*APARTAT 3*/
+.apartat3{
+    height: 65rem;
+    background-color: #deeee5;
+}
+
+h2{
+    margin: 0;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.apartat3 .titol{
+   text-align: center;
+   padding: 6rem 0 0 0;
+}
+
+.projectes-web .treball{   
+    border: solid 0.05rem black;
+    width: 10%;
+    margin: 2% 0 0 8%;
+    text-align: center;
+    float: left;
+    background-color: white;
+}
+
+/*APARTAT 4*/
+.apartat4{
+    height: 60rem;
+    background-color: white;
+}
+
+.apartat4 .titol{
+    text-align: center;
+    padding: 6rem 0 0 0;
+
+}
+
+.projectes-grafic .treball{
+    border: solid 0.05rem black;
+    width: 10%;
+    margin: 2% 0 0 10%;
+    text-align: center;
+    float: left;
+    background-color: white;
+}
+
+
+/*APARTAT 5*/
+.apartat5{
+    height: 60rem;
+    background-color: #deeee5;
+}
+
+.apartat5 .titol{
+    text-align: center;
+    padding: 6rem 0 0 0;
+
+}
+
+.altres-projectes .treball{
+    border: solid 0.05rem black;
+    width: 10%;
+    margin: 2% 0 0 10%;
+    text-align: center;
+    float: left;
+    background-color: white;
+}
+
+
+/* ---- PROJECTES ---- */
+/*APARTAT 2*/
+.apar2{
+    height: 25rem;
+}
+
+.apar2 .aida{
+    padding-top: 1rem;
+    border: solid 0.05rem black;
+    width: 10%;
+    margin: 2% 0 0 8%;
+    text-align: center;
+    float: left;
+    background-color: white;
+}
+
+/*APARTAT 3*/
+.apar3{
+    height: 24rem;
+    background-color: #deeee5;
+}
+
+.apar3 .cont, .apar3 .mi, .apar3 .habilitats{
+    padding: 6rem 0 0 0;
+    float: left;
+}
+
+.apar3 .cont, .apar3 .habilitats{
+    width: 30%;
+}
+
+.apar3 .mi{
+    width: 39.9%;
+}
+
+.cont h3, .mi h3, .habilitats h3{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+p{
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.cont, .mi{
+    border-right: 0.01rem solid black;
+    height: 18rem;
+}
+
+.habilitats p, .cont p{
+    text-align: center;
+}
+
+.mi p{
+    padding: 0 4rem;
+}
+
+/*APARTAT 4*/
+.apar4{
+    height: 60rem;
+}
+
+.apar4 .experiencia{
+    padding: 6rem 4rem 0 0;
+    float: left;
+    width: 100%;
+}
+
+.experiencia h3{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin: 0;
+}
+
