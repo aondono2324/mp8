@@ -8,6 +8,9 @@ x:before {
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    width: 100%;
+}
 
 /*---- MENU ----*/
 .menu{
@@ -301,10 +304,11 @@ p{
 }
 
 .averlance, .freelance, .empiezapori, .batxillerat, .provencana, .alguero{
-    width: 27.4%;
+    width: 25.3%;
     margin-top: 4rem;
-    padding: 2rem 4rem 0 4rem;
+    padding: 2rem 4% 0 4%;
     float: left;
+    
 }
 
 .averlance, .freelance{
@@ -367,7 +371,7 @@ p{
     height: 30rem;
 }
 
-.apar6 .cursos, .apar7 .dades{
+.apar6 .cursos{
     padding: 4rem 4rem 0 0;
     float: left;
     width: 100%;
@@ -381,25 +385,30 @@ p{
 }
 
 .curs, .curs-ultim{
-    width: 14%;
+    width: 11.9%;
     margin-top: 4rem;
-    padding: 2rem 4rem 0 4rem;
+    padding: 2rem 4% 0 4%;
     float: left;
 }
 
 .dada, .dada-ultim{
-    width: 18%;
+    width: 16.9%;
     margin-top: 4rem;
-    padding: 2rem 4rem 0 4rem;
+    padding: 2rem 4% 0 4%;
     float: left;
 }
 
-.curs, .dada{
+.curs{
     border-right: 0.01rem solid black;
     height: 10rem;
 }
 
-.curs h4, .curs-ultim h4, .dada h4, .dada-ultim h4{
+.dades .dada{
+    border-right: 0.01rem solid black;
+    height: 22rem;
+}
+
+.curs h4, .curs-ultim h4{
     font-size: 1.5rem;
     font-weight: 300;
     color: #0A3B3C;
@@ -411,6 +420,7 @@ p{
     font-weight: 200;
     color: grey;
     text-align: center;
+    
 }
 
 .curs p, .curs-ultim p, .dada p, .dada-ultim p{
@@ -421,6 +431,7 @@ p{
     width: 70%;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 2rem;
 }
 
 .dada ul li, .dada-ultim ul li{
@@ -437,3 +448,15 @@ p{
     overflow:visible;
     padding-left: 1rem;
 }
+
+.apar7{
+    background-color: #deeee5;
+    width: 100%;
+}
+
+.dada h3, .dada-ultim h3{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+

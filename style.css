@@ -152,4 +152,20 @@ button:hover{
     margin-top: 1rem;
 }
 
+/*APARTAT 3*/
+.apartat3{
+    height: 26.8rem;
+    background-color: #deeee5;
+}
 
+.apartat-mi{
+    width: 50%;
+    padding: 5% 5% 0 5%;
+    float: right;
+    text-align: right;
+}
+
+.apartat3 .imatge {
+    width: 16%;
+    float: right;
+}
