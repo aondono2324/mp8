@@ -667,4 +667,47 @@ p{
 
 @media screen and (min-width: 481px) and (max-width: 1024px) {
     
+    /* ---- APARTAT 1 PROJECTES ---- */
+    .apartat1{
+        height: 20rem;
+    }
+
+    .apartat1 .titol, .apar1 .titol{
+        width: 80%;
+        padding: 5rem 0 0 1rem;
+    }
+
+    /* ---- APARTAT 2 PROJECTES ---- */
+    .apartat2{
+        height: 28rem;
+    }
+
+    .apartat2 .web, .apartat2 .grafic, .apartat2 .altres{
+        width: 25%;
+        margin: 8% 4% 0 4%;
+        height: 20rem;
+    }
+
+    /* ---- APARTAT 3, 4 i 5 PROJECTES ---- */
+    .apartat3{
+        height: 78rem;
+    }
+
+    .apartat4{
+        height: 58rem;
+    }
+
+    .apartat5{
+        height: 40rem;
+    }
+
+    .apartat3 .titol, .apartat4 .titol, .apartat5 .titol{
+        padding: 5rem 0 2rem 0;
+    }
+
+    .projectes-web .treball, .projectes-grafic .treball, .altres-projectes .treball{
+        width: 20%;
+        height: 20rem;
+        margin: 2% 2.3% 0 2.3%;
+    } 
 }
