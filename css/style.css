@@ -46,11 +46,22 @@ li a{
 
 .nav ul li {
     position: relative;
+}
+
+.inici, .contacte{
     margin: 0 3rem 0 0;
+}
+
+.sobre-mi{
+    margin: 0 3rem 0 3rem;
 }
 
 .projectes:hover .nav2{ 
     display: block; 
+}
+
+.projectes:hover{
+    margin-right: -2rem;
 }
 
 .nav2 { 
@@ -468,7 +479,7 @@ p{
     
     /* ---- MENU ---- */
     .nav{
-        margin: 0 0 0 1rem;
+        margin: 0 0 0 0.5rem;
     }
     
     .nav ul li{
@@ -483,6 +494,7 @@ p{
     li a{
         font-size: 0.8rem;
     }
+
 
     /* ---- APARTAT 1 PROJECTES i SOBRE MI ---- */
     .apartat1{
@@ -710,4 +722,124 @@ p{
         height: 20rem;
         margin: 2% 2.3% 0 2.3%;
     } 
+
+    /* ---- APARTAT 2 SOBRE MI ---- */
+    .apar2{
+        height: 35rem;
+        padding: 2rem 0 0 0;
+    }
+
+    .apar2 .aida{
+        width: 20%;
+        margin: 2% 2.3% 0 2.3%;
+        height: 9rem;
+    }
+
+
+    /* ---- APARTAT 3 SOBRE MI ---- */
+    .apar3{
+        height: 64rem;
+    }
+
+    .apar3 .cont, .apar3 .mi, .apar3 .habilitats{
+        width: 100%;
+        padding: 5rem 0 0 0;
+    }
+
+    .apar3 .cont, .apar3 .habilitats{
+        height: 12rem;
+    }
+
+    .apar3 .mi{
+        height: 16rem;
+    }
+
+    .mi, .cont{
+        border-bottom: 0.01rem solid black;
+    }
+
+
+    /* ---- APARTAT 4 I 5 SOBRE MI ---- */
+    .apar4{
+        height: 80rem;
+    }
+
+    .apar5{
+        height: 53rem;
+    }
+
+    .apar4 .experiencia, .apar5 .titulacio{
+        padding: 5rem 0 0 0;
+    }
+
+    .averlance, .freelance, .empiezapori, .batxillerat, .provencana, .alguero{
+        width: 95%;
+        padding: 0rem 4rem 2rem 2rem;
+    }
+    
+    .averlance, .freelance, .batxillerat, .provencana{
+        border-bottom: 0.01rem solid black;
+
+    }
+
+    .batxillerat, .provencana, .alguero{
+        height: 8rem;
+    }
+
+    /* ---- APARTAT 6 SOBRE MI ---- */
+    .apar6{
+        height: 80rem;
+    }
+
+    .curs, .curs-ultim{
+        width: 100%;
+        padding: 0 0 2rem 0;
+        height: 8rem;
+    }
+
+    .curs p, .curs-ultim p{
+        font-size: 0.8rem;
+    }
+
+    .curs{
+        border-bottom: 0.01rem solid black;
+
+    }
+
+    .curs hr, .curs-ultim hr{
+        width: 40%;
+
+    }
+
+    /* ---- APARTAT 7 SOBRE MI ---- */
+    .apar7{
+        height: 98rem;
+    }
+
+    .dada, .dada-ultim{
+        width: 100%;
+        padding: 2rem 0 2rem 0;
+    }
+
+    .dada p, .dada-ultim p{
+        font-size: 0.85rem;
+
+    }
+
+    .dades .dada{
+        height: 12rem;
+        border-bottom: 0.01rem solid black;
+    }
+
+    .dada hr, .dades hr{
+        width: 50%;
+    }
+
+    #aptituds, #interessos{
+        height: 20rem;
+    }
+
+    #aptituds ul, #interessos ul{
+        padding-left: 15rem;
+    }
 }
