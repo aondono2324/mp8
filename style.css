@@ -182,6 +182,11 @@ button:hover{
     text-align: right;
 }
 
+.apartat-mi hr{
+    width: 30%;
+    float: right;
+}
+
 .apartat3 .imatge {
     width: 16%;
     float: right;
