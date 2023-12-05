@@ -8,8 +8,9 @@ x:before {
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body, html{
     width: 100%;
+    overflow-x: hidden;
 }
 
 /*---- MENU ----*/
@@ -197,10 +198,6 @@ h2{
     float: left;
     background-color: white;
 
-}
-
-.projectes-grafic{
-    
 }
 
 
@@ -400,7 +397,7 @@ p{
 
 .curs{
     border-right: 0.01rem solid black;
-    height: 10rem;
+    height: 12rem;
 }
 
 .dades .dada{
@@ -460,3 +457,214 @@ p{
     text-align: center;
 }
 
+
+/* DISSENY MOBIL VERTICAL */
+
+@media screen and (max-width: 480px) {
+
+    h3{
+        font-size: 0.9rem;
+    }
+    
+    /* ---- MENU ---- */
+    .nav{
+        margin: 0 0 0 1rem;
+    }
+    
+    .nav ul li{
+        margin: 0.25rem 1rem 0 0;
+    }
+
+    .logo img{
+        width: 6rem;
+        margin: 1rem 0 0 1rem;
+    }
+
+    li a{
+        font-size: 0.8rem;
+    }
+
+    /* ---- APARTAT 1 PROJECTES i SOBRE MI ---- */
+    .apartat1{
+        height: 18rem;
+        padding: 2rem 0 0 0;
+    }
+
+    .apar1{
+        height: 23rem;
+        padding: 1rem 0 0 0;
+    }
+
+    .apartat1 .titol, .apar1 .titol{
+        width: 80%;
+        padding: 5rem 0 0 1rem;
+    }
+
+    .titol h1{
+        font-size: 3rem;
+    }
+
+    .titol h5{
+        font-size: 1.1rem;
+    }
+
+    /* ---- APARTAT 2 PROJECTES ---- */
+    .apartat2{
+        height: 20rem;
+    }
+
+    .apartat2 .web, .apartat2 .grafic, .apartat2 .altres{
+        width: 25%;
+        margin: 8% 4% 0 4%;
+        height: 15rem;
+    }
+
+    /* ---- APARTAT 3, 4 i 5 PROJECTES ---- */
+    .apartat3{
+        height: 55rem;
+    }
+
+    .apartat4{
+        height: 42rem;
+    }
+
+    .apartat5{
+        height: 30rem;
+    }
+
+    .apartat3 .titol, .apartat4 .titol, .apartat5 .titol{
+        padding: 5rem 0 2rem 0;
+    }
+
+    .projectes-web .treball, .projectes-grafic .treball, .altres-projectes .treball{
+        width: 20%;
+        height: 13rem;
+        margin: 2% 2.3% 0 2.3%;
+    } 
+
+    /* ---- APARTAT 2 SOBRE MI ---- */
+    .apar2{
+        height: 28rem;
+        padding: 2rem 0 0 0;
+    }
+
+    .apar2 .aida{
+        width: 20%;
+        margin: 2% 2.3% 0 2.3%;
+        height: 7rem;
+    }
+
+
+    /* ---- APARTAT 3 SOBRE MI ---- */
+    .apar3{
+        height: 64rem;
+    }
+
+    .apar3 .cont, .apar3 .mi, .apar3 .habilitats{
+        width: 100%;
+        padding: 5rem 0 0 0;
+    }
+
+    .apar3 .cont, .apar3 .habilitats{
+        height: 12rem;
+    }
+
+    .apar3 .mi{
+        height: 16rem;
+    }
+
+    .mi, .cont{
+        border-bottom: 0.01rem solid black;
+    }
+
+    .apar3 .cont p, .apar3 .mi p, .apar3 .habilitats p{
+        font-size: 0.85rem;
+    }
+
+    /* ---- APARTAT 4 I 5 SOBRE MI ---- */
+    .apar4{
+        height: 80rem;
+    }
+
+    .apar5{
+        height: 53rem;
+    }
+
+    .apar4 .experiencia, .apar5 .titulacio{
+        padding: 5rem 0 0 0;
+    }
+
+    .averlance, .freelance, .empiezapori, .batxillerat, .provencana, .alguero{
+        width: 85%;
+        padding: 0rem 2rem 2rem 2rem;
+    }
+    
+    .averlance, .freelance, .batxillerat, .provencana{
+        border-bottom: 0.01rem solid black;
+
+    }
+
+    .averlance p, .freelance p, .empiezapori p, .batxillerat p, .provencana p, .alguero p{
+        font-size: 0.85rem;
+    }
+
+    .batxillerat, .provencana, .alguero{
+        height: 8rem;
+    }
+
+    /* ---- APARTAT 6 SOBRE MI ---- */
+    .apar6{
+        height: 80rem;
+    }
+
+    .curs, .curs-ultim{
+        width: 100%;
+        padding: 0 0 2rem 0;
+        height: 8rem;
+    }
+
+    .curs p, .curs-ultim p{
+        font-size: 0.8rem;
+    }
+
+    .curs{
+        border-bottom: 0.01rem solid black;
+
+    }
+
+    /* ---- APARTAT 7 SOBRE MI ---- */
+    .apar7{
+        height: 98rem;
+    }
+
+    .dada, .dada-ultim{
+        width: 100%;
+        padding: 2rem 0 2rem 0;
+    }
+
+    .dada p, .dada-ultim p{
+        font-size: 0.85rem;
+
+    }
+
+    .dades .dada{
+        height: 12rem;
+        border-bottom: 0.01rem solid black;
+    }
+
+    #aptituds, #interessos{
+        height: 20rem;
+    }
+
+    #aptituds ul, #interessos ul{
+        padding-left: 5rem;
+    }
+
+}
+
+
+/* DISSENY MOBIL APAISAT */
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    
+}

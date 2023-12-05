@@ -8,6 +8,11 @@ x:before {
     font-family: 'Poppins', sans-serif;
 }
 
+body, html{
+    width: 100%;
+    overflow-x: hidden;
+}
+
 /*---- MENU ----*/
 .menu{
     width: 100%;
@@ -110,7 +115,7 @@ h5{
 
 /*APARTAT 2*/
 .apartat2{
-    height: 30rem;
+    height: 26.2rem;
 }
 
 .imatge{
@@ -154,7 +159,7 @@ button:hover{
 
 /*APARTAT 3*/
 .apartat3{
-    height: 26.8rem;
+    height: 26.3rem;
     background-color: #deeee5;
 }
 
@@ -168,4 +173,90 @@ button:hover{
 .apartat3 .imatge {
     width: 16%;
     float: right;
+}
+
+
+/* DISSENY MOBIL VERTICAL */
+
+@media screen and (max-width: 480px) {
+    
+    /* ---- MENU ---- */
+    .nav{
+        margin: 0 0 0 1rem;
+    }
+    
+    .nav ul li{
+        margin: 0.25rem 1rem 0 0;
+    }
+
+    .logo img{
+        width: 6rem;
+        margin: 1rem 0 0 1rem;
+    }
+
+    li a{
+        font-size: 0.8rem;
+    }
+
+    /* ---- APARTAT 1 ---- */
+    .apartat1{
+        height: 20rem;
+        background-size: 165%;
+        background-position: 105% 110%;
+    }
+
+    .apartat1 .titol h1{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .apartat1 .titol{
+        text-align: right;
+        width: 80%;
+    }
+
+
+    /* ---- APARTAT 2 i 3---- */
+    .apartat2, .apartat3{
+        height: 36rem;
+        background-color: #deeee5;
+        margin: 0;
+    }
+
+    .apartat2 .imatge, .apartat3 .imatge{
+        width: 100%;
+    }
+
+    .apartat2 .apartat-projecte{
+        position: absolute;
+        width: 100%;
+        padding: 1rem 0 0 2rem;
+    }
+
+    .apartat-projecte hr{
+        width: 70%;
+    }
+
+    h2{
+        font-size: 2.5rem;
+    }
+
+    .apartat3 .apartat-mi{
+        position: absolute;
+        width: 70%;
+        padding: 1rem 0 0 2rem;
+        text-align: left;
+    }
+
+    .apartat2 .apartat-projecte p, .apartat3 .apartat-mi p{
+        font-size: 0.75rem;
+    }
+
+}
+
+
+/* DISSENY MOBIL APAISAT */
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    
 }
