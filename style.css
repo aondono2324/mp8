@@ -258,5 +258,55 @@ button:hover{
 /* DISSENY MOBIL APAISAT */
 
 @media screen and (min-width: 481px) and (max-width: 1024px) {
-    
+    /* ---- APARTAT 1 ---- */
+    .apartat1{
+        height: 20rem;
+        background-size: 140%;
+        background-position: 30% -30%;
+    }
+
+    .apartat1 .titol h1{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .apartat1 .titol{
+        text-align: left;
+        width: 60%;
+    }
+
+    /* ---- APARTAT 2 i 3---- */
+    .apartat2, .apartat3{
+        height: 25.6rem;
+        margin: 0;
+    }
+
+    .apartat2 .imatge, .apartat3 .imatge{
+        width: 40%;
+    }
+
+    .apartat2 .apartat-projecte{
+        width: 40%;
+        padding: 5rem 0 0 2rem;
+        float: left;
+    }
+
+    .apartat-projecte hr, .apartat-mi hr{
+        width: 60%;
+    }
+
+    h2{
+        font-size: 2.5rem;
+    }
+
+    .apartat3 .apartat-mi{
+        position: absolute;
+        width: 50%;
+        padding: 5rem 0 0 2rem;
+        text-align: left;
+    }
+
+    .apartat2 .apartat-projecte p, .apartat3 .apartat-mi p{
+        font-size: 0.75rem;
+    }
 }
