@@ -313,6 +313,7 @@ p{
     margin: 0;
 }
 
+
 .averlance, .freelance, .empiezapori, .batxillerat, .provencana, .alguero{
     width: 25.3%;
     margin-top: 4rem;
@@ -597,7 +598,7 @@ p{
 
     /* ---- APARTAT 4 I 5 SOBRE MI ---- */
     .apar4{
-        height: 80rem;
+        height: 90rem;
     }
 
     .apar5{
@@ -610,7 +611,7 @@ p{
 
     .averlance, .freelance, .empiezapori, .batxillerat, .provencana, .alguero{
         width: 85%;
-        padding: 0rem 2rem 2rem 2rem;
+        padding: 0rem 2rem 6rem 2rem;
     }
     
     .averlance, .freelance, .batxillerat, .provencana{

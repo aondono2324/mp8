@@ -131,7 +131,7 @@ h5{
 }
 
 .imatge{
-    width: 16%;
+    width: 19.7rem;
     float: left;
 }
 
@@ -188,8 +188,12 @@ button:hover{
 }
 
 .apartat3 .imatge {
-    width: 16%;
+    width: 19.7rem;
     float: right;
+}
+
+.hamburguesa{
+    display: none;
 }
 
 
@@ -269,6 +273,100 @@ button:hover{
         font-size: 0.75rem;
     }
 
+
+    .apartat-mi hr{
+        width: 100%;
+        float: left;
+    }
+
+
+    /*---- MENU HAMBURGUESA ---- */
+    input {
+        appearance: none;
+        float: right;
+        top: 1rem;
+        left: 1rem;
+        color: #deeee5;
+    }
+
+    input:before {
+        content: "---";
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        font-size: 4rem;
+        line-height: 0.5rem;
+        text-align: center;
+        /*vertical-align: middle;*/
+        margin-top: 1rem;
+    }
+
+    input:checked:before {
+        content: "---";
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        /*background: green;*/
+        font-size: 4rem;
+        line-height: 0.5rem;
+        text-align: center;
+        /*vertical-align: middle;*/
+        color: #deeee5;
+    }
+
+    label {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -10;
+        left: -100%;
+        box-shadow: 0.1rem 0 0.3rem grey;
+        background: rgba(10, 59, 60, 0.75);
+    }
+
+
+    input:checked~label {
+        left: 60%;
+        z-index: 57843039;
+    }
+
+    .hamburguesa{
+        display: block;
+        height: 70px;
+        width: 20%;
+        float: right;
+        position: relative;
+    }
+
+    .menu .nav{
+    display: none;
+    }
+
+    ul li{
+        float: none;
+        /*padding: 2rem 2rem 0rem 0;*/
+        margin: 0;
+    }
+
+    .sobre-mi{
+        margin: 0;
+    }
+
+
+    ul .nav2{
+        display: block;
+        padding: 0.5rem 0 0.5rem 4rem;
+        background: rgba(0, 0, 0, 0);
+
+    }
+
+    label hr{
+        margin: -1rem 0 ;
+    }
 }
 
 
@@ -325,5 +423,10 @@ button:hover{
 
     .apartat2 .apartat-projecte p, .apartat3 .apartat-mi p{
         font-size: 0.75rem;
+    }
+
+    .apartat-mi hr{
+        float: left;
+        width: 70%;
     }
 }
