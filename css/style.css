@@ -678,17 +678,21 @@ p{
 
     /*---- MENU HAMBURGUESA ---- */
     input {
+        position: absolute;
         appearance: none;
         float: right;
         top: 1rem;
         right: 1rem;
         color: #deeee5;
+        z-index: 100000000;
         position: fixed;
     }
 
     input:before {
+        position: absolute;
         content: "---";
         display: block;
+        right: 1rem;
         width: 2rem;
         height: 2rem;
         font-size: 4rem;
@@ -696,19 +700,22 @@ p{
         text-align: center;
         /*vertical-align: middle;*/
         margin-top: 1rem;
+        color: rgba(222, 238, 229);
     }
 
     input:checked:before {
-        content: "---";
+        position: absolute;
+        content: "x";
         display: block;
+        right: 1rem;
         width: 2rem;
         height: 2rem;
         /*background: green;*/
-        font-size: 4rem;
+        font-size: 2rem;
         line-height: 0.5rem;
         text-align: center;
         /*vertical-align: middle;*/
-        color: #deeee5;
+        color: rgba(222, 238, 229, 0.75);
     }
 
     label {
@@ -767,7 +774,6 @@ p{
     label hr{
         margin: -1rem 0 ;
     }
-
 }
 
 
