@@ -1,0 +1,221 @@
+*,
+x:after,
+x:before {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+body, html{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+/*---- MENU ----*/
+.menu{
+    width: 100%;
+    height: 5rem;
+    background-color: #0A3B3C;
+    font-weight: 300;
+    position: fixed;
+    z-index: 100000;
+}
+
+.nav{
+    margin: 0 0 0 2rem;
+}
+
+.nav, ul{
+    list-style-type: none;
+    overflow: hidden;
+    float: left;
+}
+
+
+li{
+    float: left;
+    padding: 2rem 0;
+}
+
+li a{
+    display: block;
+    text-decoration: none;
+}
+
+.nav ul li {
+    position: relative;
+}
+
+.inici, .contacte{
+    margin: 0 3rem 0 0;
+}
+
+.sobre-mi{
+    margin: 0 3rem 0 3rem;
+}
+
+.projectes:hover .nav2{ 
+    display: block; 
+}
+
+.projectes:hover{
+    margin-right: -2rem;
+}
+
+.nav2 { 
+    /*position: absolute;*/
+    width: 4.5rem;
+    display: none;
+    margin: 0;
+    background-color: #0A3B3C;
+    padding: 1rem 2rem 0 2rem;
+    margin-left: -2rem;
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+.practica {
+    margin: 0!important;
+    display: block;
+    padding: 0.2rem 0;
+}
+
+a{
+    color: #deeee5;
+}
+
+.logo img{
+    width: 8rem;
+    margin: 0.3rem 0rem 0 1.5rem ;
+    float: left;
+    display: block;
+}
+
+.hamburguesa{
+    display: none;
+}
+
+
+/* DISSENY MOBIL VERTICAL */
+
+@media screen and (max-width: 480px) {
+
+    /* ---- MENU ---- */
+    .nav{
+        margin: 0 0 0 0.5rem;
+    }
+    
+    .nav ul li{
+        margin: 0.25rem 1rem 0 0;
+    }
+
+    .logo img{
+        width: 6rem;
+        margin: 1rem 0 0 1rem;
+    }
+
+    li a{
+        font-size: 0.8rem;
+    }
+
+    /*---- MENU HAMBURGUESA ---- */
+    input {
+        position: absolute;
+        appearance: none;
+        float: right;
+        top: 1rem;
+        right: 1rem;
+        color: #deeee5;
+        z-index: 100000000;
+        position: fixed;
+    }
+
+    input:before {
+        position: absolute;
+        content: "---";
+        display: block;
+        right: 1rem;
+        width: 2rem;
+        height: 2rem;
+        font-size: 4rem;
+        line-height: 0.5rem;
+        text-align: center;
+        /*vertical-align: middle;*/
+        margin-top: 1rem;
+        color: rgba(222, 238, 229);
+    }
+
+    input:checked:before {
+        position: absolute;
+        content: "x";
+        display: block;
+        right: 1rem;
+        width: 2rem;
+        height: 2rem;
+        /*background: green;*/
+        font-size: 2rem;
+        line-height: 0.5rem;
+        text-align: center;
+        /*vertical-align: middle;*/
+        color: rgba(222, 238, 229, 0.75);
+    }
+
+    label {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -10;
+        left: -100%;
+        background: rgba(10, 59, 60, 0.75);
+    }
+
+
+    input:checked~label {
+        left: 60%;
+        z-index: 57843039;
+    }
+
+    .hamburguesa{
+        display: block;
+        height: 70px;
+        width: 20%;
+        float: right;
+        position: relative;
+        z-index: 1000000;
+    }
+
+    .menu .nav{
+    display: none;
+    }
+
+    ul li{
+        float: none;
+        /*padding: 2rem 2rem 0rem 0;*/
+        margin: 0;
+    }
+
+    label ul {
+        margin: 0 0 0 2rem;
+    }
+    .sobre-mi{
+        margin: 0;
+    }
+
+
+    ul .nav2{
+        display: block;
+        padding: 0.5rem 0 0.5rem 4rem;
+        background: rgba(0, 0, 0, 0);
+
+    }
+
+    label hr{
+        margin: -1rem 0 ;
+    }
+}
