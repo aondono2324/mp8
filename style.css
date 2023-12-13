@@ -6,6 +6,7 @@ x:before {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    position: relative;
 }
 
 body, html{
@@ -20,6 +21,7 @@ body, html{
     background-color: #0A3B3C;
     font-weight: 300;
     position: fixed;
+    z-index: 100000;
 }
 
 .nav{
@@ -29,7 +31,6 @@ body, html{
 .nav, ul{
     list-style-type: none;
     overflow: hidden;
-    top: 1.7rem;
     float: left;
 }
 
@@ -224,6 +225,7 @@ button:hover{
         height: 20rem;
         background-size: 155%;
         background-position: 100% 100%;
+        padding-top: 4rem;
     }
 
     .apartat1 .titol h1{
@@ -285,8 +287,9 @@ button:hover{
         appearance: none;
         float: right;
         top: 1rem;
-        left: 1rem;
+        right: 1rem;
         color: #deeee5;
+        position: fixed;
     }
 
     input:before {
@@ -324,7 +327,6 @@ button:hover{
         right: 0;
         z-index: -10;
         left: -100%;
-        box-shadow: 0.1rem 0 0.3rem grey;
         background: rgba(10, 59, 60, 0.75);
     }
 
@@ -340,6 +342,7 @@ button:hover{
         width: 20%;
         float: right;
         position: relative;
+        z-index: 1000000;
     }
 
     .menu .nav{
@@ -352,6 +355,9 @@ button:hover{
         margin: 0;
     }
 
+    label ul {
+        margin: 0 0 0 2rem;
+    }
     .sobre-mi{
         margin: 0;
     }
