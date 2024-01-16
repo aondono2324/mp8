@@ -3,58 +3,238 @@
 	<head>
 		<title>La meva primera pàgina</title>
 		<meta:author="Aida">
+        <link rel="stylesheet" href="../css/menu.css" type="text/css">
+
+		<style>
+			.contenidor{
+				padding: 0;
+				margin: 0;
+			}
+
+			font ul{
+				list-style-type: disc;
+				display: block;
+				overflow: auto;
+				width: 100%;
+			}
+
+			font ul li{
+				float: none;
+				padding: 0;
+				margin: 0;
+				display: list-item;
+			}
+
+			font ol{
+				width: 100%;
+				list-style-type: decimal;
+				display: block;
+			}
+
+			font ol li{
+				float: none;
+				display: list-item;
+				padding: 0;
+				margin: 0;
+			}
+
+			.contingut{
+				padding-top: 6rem;
+			}
+		</style>
 	</head>
 
 	<body>
 
-		<b> Hola </b>
-		<br>
-		<i> Em dic Aida </i>
-		<br>
-		<hr>
-		<s> No m'agrada la web </s>
-		<br>
-		<u> Si que m'agrada molt </u>
-
-		<br>
-		<hr>
-
-		<font size="2" color="red"> 
-			<ul>
-				<li> Verdures </li>
-				<li> Car </li>
-				<li> Aigua </li>
-				<li> Pa </li>
-				<li> Peix </li>
-			</ul>
-		</font>
-
-		<hr>
-
-		<font color="green">
-			<ol>
-				<li> Barça </li>
-				<li> Leganés </li>
-				<li> Betis </li>
-				<li> Osasuna </li>
-				<li> Madrit </li>
-			</ol>
-		</font>
-
-		<hr>
-
-		<h1>Titular </h1>
-		<h2>Subtítulo</h2>
-		<h3>Titulet</h3>
+		<div class="contenidor">
+			<div class="menu">
+				<div class="logo">
+					<a href="../index.html">
+						<img src="../img/logo_Ondono_Aida_clar.png" alt="">
+					</a>
+				</div>
+				<div class="nav">
+					<ul>
+						<li class="inici">
+							<a href="../index.html">Inici</a>
+						</li>
 		
-		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum ligula enim, a hendrerit ex tincidunt at. Duis massa ligula, pellentesque sit amet venenatis vitae, mattis ac dolor. In sodales, neque interdum cursus pretium, erat urna pellentesque metus, et posuere felis dolor eu lorem. Praesent at condimentum diam. Duis congue augue at ultrices elementum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed luctus mauris ultrices <a href="https://mymemory.translated.net/es/Lat%C3%ADn/Espa%C3%B1ol/vulputate">vulputate</a> vehicula. Donec sodales condimentum porta. Mauris facilisis erat sed lacus molestie euismod. Suspendisse scelerisque posuere velit, eu feugiat metus egestas et. Donec metus nulla, posuere vitae elit at, mollis vestibulum dolor. Proin varius, ex a blandit pulvinar, lectus diam dictum nisi, sed pellentesque libero tortor sit amet lacus. Nullam blandit, velit nec porta ullamcorper, velit risus lobortis tortor, eu volutpat dolor nisi ut elit. Ut eget blandit velit. </p>
+						<li class="projectes">
+							<a href="../html/projectes.html">Projectes
+								<ul class="nav2">
+									<li class="practica">
+										<a href="../mp08_UF1_01_ondonoa/index.html">Primera</a>
+									</li>
+		
+									<li class="practica">
+										<a href="../mp08_UF1_02_horari_ondonoa/index.html">Horari</a>
+									</li>
+		
+									<li class="practica">
+										<a href="../mp08_UF1_03_feedly_ondonoa/index.html">Feedly</a>
+									</li>
+		
+									<li class="practica">
+										<a href="../mp08_UF1_04_ifpagram_ondonoa/index.html">Ifpagram</a>
+									</li>
+		
+									<li class="practica">
+										<a href="../mp08_UF1_05_escacs_ondonoa/index.html">Escacs</a>
+									</li>
+		
+									<li class="practica">
+										<a href="../mp08_UF1_06_absolute_ondonoa/index.html">Asbsolute</a>
+									</li>
+		
+									<li class="practica">
+										<a href="../mp08_UF1_07_floreta_ondonoa/index.html">Floreta</a>
+									</li>
+		
+									<li class="practica">
+										<a href="../mp08_UF1_08_cara_ondonoa/index.html">Cara</a>
+									</li>
+		
+									<li class="practica">
+										<a href="../mp08_UF1_09_photoshop_ondonoa/index.html">Photoshop</a>
+									</li>
+		
+									<li class="practica">
+										<a href="../mp08_UF1_10_pelis_ondonoa/index.html">Pelis</a>
+									</li>
+		
+								</ul>
+							</a>
+						</li>
+		
+						<li class="sobre-mi">
+							<a href="../html/sobre-mi.html">Sobre mi</a>
+						</li>
+		
+						<li class="contacte">
+							<a href="#">Contacte</a>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+	
+			<div class="hamburguesa">
+				<input type="checkbox" name="interruptor">
+				<label for="interruptor">
+					<ul>
+						<li class="inici">
+							<a href="index.html">Inici</a>
+						</li>
+						<hr>
+						<li class="projectes">
+							<a href="html/projectes.html">Projectes
+								<ul class="nav2">
+									<li class="practica">
+										<a href="mp08_UF1_01_ondonoa/index.html">Primera</a>
+									</li>
+		
+									<li class="practica">
+										<a href="mp08_UF1_02_horari_ondonoa/index.html">Horari</a>
+									</li>
+		
+									<li class="practica">
+										<a href="mp08_UF1_03_feedly_ondonoa/index.html">Feedly</a>
+									</li>
+		
+									<li class="practica">
+										<a href="mp08_UF1_04_ifpagram_ondonoa/index.html">Ifpagram</a>
+									</li>
+		
+									<li class="practica">
+										<a href="mp08_UF1_05_escacs_ondonoa/index.html">Escacs</a>
+									</li>
+		
+									<li class="practica">
+										<a href="mp08_UF1_06_absolute_ondonoa/index.html">Asbsolute</a>
+									</li>
+		
+									<li class="practica">
+										<a href="mp08_UF1_07_floreta_ondonoa/index.html">Floreta</a>
+									</li>
+		
+									<li class="practica">
+										<a href="mp08_UF1_08_cara_ondonoa/index.html">Cara</a>
+									</li>
+		
+									<li class="practica">
+										<a href="mp08_UF1_09_photoshop_ondonoa/index.html">Photoshop</a>
+									</li>
+		
+									<li class="practica">
+										<a href="mp08_UF1_10_pelis_ondonoa/index.html">Pelis</a>
+									</li>
+		
+								</ul>
+							</a>
+						</li>
+						<hr>
+						<li class="sobre-mi">
+							<a href="html/sobre-mi.html">Sobre mi</a>
+						</li>
+						<hr>
+						<li class="contacte">
+							<a href="#">Contacte</a>
+						</li>
+					</ul>
+				</label>
+			</div>
 
-		<blockquote cite>
-			Para trabajar basta estar convencido de una cosa: que trabajar es menos aburrido que divertirse
-		</blockquote cite>
-
-		<img src="https://static.nationalgeographic.es/files/styles/image_3200/public/01-proboscis-monkey-NationalGeographic_2684060.jpg?w=1600&h=900" width="320px">
-
-
+			<div class="contingut">
+				<b> Hola </b>
+				<br>
+				<i> Em dic Aida </i>
+				<br>
+				<hr>
+				<s> No m'agrada la web </s>
+				<br>
+				<u> Si que m'agrada molt </u>
+		
+				<br>
+				<hr>
+		
+				<font size="2" color="red"> 
+					<ul>
+						<li> Verdures </li>
+						<li> Car </li>
+						<li> Aigua </li>
+						<li> Pa </li>
+						<li> Peix </li>
+					</ul>
+				</font>
+		
+				<hr>
+		
+				<font color="green">
+					<ol>
+						<li> Barça </li>
+						<li> Leganés </li>
+						<li> Betis </li>
+						<li> Osasuna </li>
+						<li> Madrit </li>
+					</ol>
+				</font>
+		
+				<hr>
+		
+				<h1>Titular </h1>
+				<h2>Subtítulo</h2>
+				<h3>Titulet</h3>
+				
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum ligula enim, a hendrerit ex tincidunt at. Duis massa ligula, pellentesque sit amet venenatis vitae, mattis ac dolor. In sodales, neque interdum cursus pretium, erat urna pellentesque metus, et posuere felis dolor eu lorem. Praesent at condimentum diam. Duis congue augue at ultrices elementum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed luctus mauris ultrices <a href="https://mymemory.translated.net/es/Lat%C3%ADn/Espa%C3%B1ol/vulputate">vulputate</a> vehicula. Donec sodales condimentum porta. Mauris facilisis erat sed lacus molestie euismod. Suspendisse scelerisque posuere velit, eu feugiat metus egestas et. Donec metus nulla, posuere vitae elit at, mollis vestibulum dolor. Proin varius, ex a blandit pulvinar, lectus diam dictum nisi, sed pellentesque libero tortor sit amet lacus. Nullam blandit, velit nec porta ullamcorper, velit risus lobortis tortor, eu volutpat dolor nisi ut elit. Ut eget blandit velit. </p>
+		
+				<blockquote cite>
+					Para trabajar basta estar convencido de una cosa: que trabajar es menos aburrido que divertirse
+				</blockquote cite>
+		
+				<img src="https://static.nationalgeographic.es/files/styles/image_3200/public/01-proboscis-monkey-NationalGeographic_2684060.jpg?w=1600&h=900" width="320px">
+		
+			</div>
+			
+		</div>
 	</body>
 </html>
