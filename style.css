@@ -92,6 +92,11 @@ button:hover{
     margin-top: 1rem;
 }
 
+.imatge .primera{
+    background-image: url(img/Aida1.jpg);
+    background-size: cover;
+}
+
 /*APARTAT 3*/
 .apartat3{
     height: 26.3rem;
@@ -115,6 +120,12 @@ button:hover{
     float: right;
 }
 
+.segona{
+    width: 50%;
+    background-image: url(img/Aida2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 
