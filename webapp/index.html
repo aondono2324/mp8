@@ -63,6 +63,41 @@
             animation-timeline: scroll();
         }
 
+        ul {
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+
+        li {
+            float: left;
+            display: inline-block;
+            background-color: rgb(248, 176, 74);
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 5rem;
+        }
+
+        #petit {
+            font-size: 1rem;
+        }
+
+        #mitja {
+            font-size: 2rem;
+        }
+
+        #gran {
+            font-size: 3rem;
+        }
+
+        p,
+        li {
+            margin: 1rem;
+        }
+
         @keyframes jacobo {
             to {
                 scale: 1 1;
@@ -85,6 +120,11 @@
                 background: skyblue;
             }
 
+            li{
+                background-color: rgb(3, 42, 61);
+                color: white;
+            }
+
         }
 
         /* disseny escriptori*/
@@ -100,6 +140,12 @@
 
 <body>
     <div class="progres"></div>
+
+    <ul>
+        <li id="petit">-</li>
+        <li id="mitja">=</li>
+        <li id="gran">+</li>
+    </ul>
 
     <h1>APP</h1>
 
